@@ -70,8 +70,8 @@ typedef struct {
 // VOUT Configuration
 static const pinCfg_t outputCfg[] = {
 //  signal,     pin,                   pull resistor,      active state
-  { vioLED0,    GPIO_PIN_ID_PORTK(5),  ARM_GPIO_PULL_NONE, VIO_ACTIVE_LOW },
-  { vioLED1,    GPIO_PIN_ID_PORTK(3),  ARM_GPIO_PULL_NONE, VIO_ACTIVE_LOW }
+  { vioLED0,    GPIO_PIN_ID_PORTK(5),  ARM_GPIO_PULL_UP,   VIO_ACTIVE_LOW },
+  { vioLED1,    GPIO_PIN_ID_PORTK(3),  ARM_GPIO_PULL_UP,   VIO_ACTIVE_LOW }
 };
 #endif
 
